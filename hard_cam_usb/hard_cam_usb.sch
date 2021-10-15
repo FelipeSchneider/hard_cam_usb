@@ -1,0 +1,147 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 59453-051110ECHLF:59453-051110ECHLF J?
+U 1 1 616991E7
+P 3150 2600
+F 0 "J?" H 3550 2865 50  0000 C CNN
+F 1 "FFC-FPC Conn" H 3550 2774 50  0000 C CNN
+F 2 "59453-051110ECHLF:59453051110ECHLF" H 3800 2700 50  0001 L CNN
+F 3 "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/59453-0_1110echlf.pdf" H 3800 2600 50  0001 L CNN
+F 4 "FFC and FPC 0.5mm Pitch FPC 5 Contact Conn connectors" H 3800 2500 50  0001 L CNN "Description"
+F 5 "Amphenol" H 3800 2300 50  0001 L CNN "Manufacturer"
+F 6 "59453-051110ECHLF" H 3800 2200 50  0001 L CNN "Part-Number"
+	1    3150 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61699DE7
+P 3050 2800
+F 0 "#PWR?" H 3050 2550 50  0001 C CNN
+F 1 "GND" H 3055 2627 50  0000 C CNN
+F 2 "" H 3050 2800 50  0001 C CNN
+F 3 "" H 3050 2800 50  0001 C CNN
+	1    3050 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 2800 3050 2700
+Wire Wire Line
+	3050 2700 3150 2700
+Wire Wire Line
+	3150 2600 3050 2600
+Wire Wire Line
+	3050 2600 3050 2700
+Connection ~ 3050 2700
+$Comp
+L power:GND #PWR?
+U 1 1 6169A6EE
+P 4150 3150
+F 0 "#PWR?" H 4150 2900 50  0001 C CNN
+F 1 "GND" H 4155 2977 50  0000 C CNN
+F 2 "" H 4150 3150 50  0001 C CNN
+F 3 "" H 4150 3150 50  0001 C CNN
+	1    4150 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3150 4150 2600
+Wire Wire Line
+	4150 2600 3950 2600
+Wire Wire Line
+	3950 3000 4100 3000
+$Comp
+L power:VCC #PWR?
+U 1 1 6169B282
+P 4100 2400
+F 0 "#PWR?" H 4100 2250 50  0001 C CNN
+F 1 "VCC" H 4115 2573 50  0000 C CNN
+F 2 "" H 4100 2400 50  0001 C CNN
+F 3 "" H 4100 2400 50  0001 C CNN
+	1    4100 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2400 4100 3000
+Text Label 4350 2700 0    50   ~ 0
+id
+Text Label 4350 2800 0    50   ~ 0
+D+
+Text Label 4350 2900 0    50   ~ 0
+D-
+$Comp
+L Connector:USB_B_Mini J?
+U 1 1 6169C090
+P 5400 2800
+F 0 "J?" H 5170 2789 50  0000 R CNN
+F 1 "USB_B_Mini" H 5170 2698 50  0000 R CNN
+F 2 "Connector_USB:USB_Mini-B_Wuerth_65100516121_Horizontal" H 5550 2750 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/65100516121.pdf" H 5550 2750 50  0001 C CNN
+F 4 "65100516121" H 5400 2800 50  0001 C CNN "Part-Number"
+F 5 "Wurth" H 5400 2800 50  0001 C CNN "Manufacturer"
+F 6 "811" H 5400 2800 50  0001 C CNN "EC"
+	1    5400 2800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2800 5100 2800
+Wire Wire Line
+	3950 2900 5100 2900
+Wire Wire Line
+	5100 3000 4900 3000
+Wire Wire Line
+	4900 3000 4900 2700
+Wire Wire Line
+	3950 2700 4900 2700
+$Comp
+L power:VCC #PWR?
+U 1 1 6169DDF0
+P 5000 2450
+F 0 "#PWR?" H 5000 2300 50  0001 C CNN
+F 1 "VCC" H 5015 2623 50  0000 C CNN
+F 2 "" H 5000 2450 50  0001 C CNN
+F 3 "" H 5000 2450 50  0001 C CNN
+	1    5000 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2450 5000 2600
+Wire Wire Line
+	5000 2600 5100 2600
+$Comp
+L power:GND #PWR?
+U 1 1 6169E390
+P 5450 3350
+F 0 "#PWR?" H 5450 3100 50  0001 C CNN
+F 1 "GND" H 5455 3177 50  0000 C CNN
+F 2 "" H 5450 3350 50  0001 C CNN
+F 3 "" H 5450 3350 50  0001 C CNN
+	1    5450 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3200 5400 3300
+Wire Wire Line
+	5400 3300 5450 3300
+Wire Wire Line
+	5500 3300 5500 3200
+Wire Wire Line
+	5450 3350 5450 3300
+Connection ~ 5450 3300
+Wire Wire Line
+	5450 3300 5500 3300
+$EndSCHEMATC
