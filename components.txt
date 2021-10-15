@@ -1,0 +1,2 @@
+connector:		59453-051110ECHLF		(SFVL series)
+cable: 			
